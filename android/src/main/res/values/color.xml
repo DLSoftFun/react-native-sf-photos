@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="sf_image_title_color">#21282C</color>
+    <color name="sf_image_text_color">#a5a5a5</color>
+    <color name="sf_toolbar_bg_color">#ff75a0</color>
+    <color name="sf_btn_bg_color">#ff75a0</color>
+    <color name="sf_check_bg_color">#ff75a0</color>
+    <color name="sf_line_color">#e7e7e7</color>
+    <color name="seekbar_background">#333333</color>
+    <color name="seekbar_secondbackground">#666666</color>
+    <color name="seekbar_progress">#0c7ad0</color>
+
+</resources>
