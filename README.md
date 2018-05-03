@@ -13,9 +13,16 @@
 |isCrop|boolean|yes|是否剪裁|
 # IOS 
 需要添加相册相册等权限 
+
 //相册   Privacy - Photo Library Usage Description
+
 //相机   NSCameraUsageDescription
+
 //麦克风  NSMicrophoneUsageDescription
+
+#注
+将目录下的HXWeiboPhotoPicker.bundle文件拽入主工程目录下
+
 # 例子
 ```
 import React, {Component} from 'react';
