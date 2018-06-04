@@ -25,66 +25,31 @@
 
 # 例子
 ```
-import React, {Component} from 'react';
-import {
-    StyleSheet,
-    Text,
-    View,
-} from 'react-native';
 
-import SFImagePicker from 'react-native-sf-photos';
+var param = {
+            number: this.maxNumber,
+            isSingle: false,
+            isCrop: false,
+            type: 'all',
+        }
+      
+      
 
+SFPhoto.getPhotos(param, (err,data) => {
+            // tempArr = tempArr.concat(data.allList);
 
-type Props = {};
-export default class App extends Component<Props> {
-    render() {
-        return (
-            <View
-                style={styles.container}>
-                <Text
-                    style={styles.welcome}
-                    onPress={() =>{
-                        
-                        /** 
-                         *  @param: type   0: 照片  1: 视频  2: 照片和视频
-                         *  @param: number 最多可选照片或视频数
-                         *  @param: isSingle 是否为选择单张模式
-                         *  @param: isCrop 是否需要剪裁
-                         **/
-                        var type = 0;
-                        var number = 5;
-                        var isSingle = false;
-                        var isCrop = false;
-                        SFImagePicker.select(type,number,isSingle,isCrop, () =>{
+            console.log(data);
+            // tempArr = data.allList;
 
-                        })
-                        
-                    }}>
-                    Welcome to React
-                    Native!
-                </Text>
-            </View>
-        );
-    }
-}
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF',
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-    },
-    instructions: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
-    },
-});
+            // this.setState({
+            //     photoArray: tempArr,
+            // }, () => {
+            //
+            //     console.log(this.state.photoArray)
+            //
+            //     if (this.props.source)
+            //         this.props.source(tempArr)
+            // })
+        })
 
 ```
